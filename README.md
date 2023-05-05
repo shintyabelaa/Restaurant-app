@@ -2,20 +2,21 @@
 
 //How to fetch api from DATA.JSON
 
-import 'regenerator-runtime'; /* for async await transpile */
-import '../styles/style.css';
-import '../styles/responsive.css';
-import App from './views/app';
 
-fetch('DATA.json')
-  .then((response) => {
-    console.log('Response:', response);
-    return response.json();
-  })
-  // response.json())
-  .then((data) => {
-    console.log('Data:', data);
-    const restaurantsList = document.getElementById('restaurants-list');
+import 'regenerator-runtime'; /* for async await transpile */<br>
+import '../styles/style.css';<br>
+import '../styles/responsive.css';<br>
+import App from './views/app';<br><br>
+
+fetch('DATA.json')<br>
+   .then((response) => {<br>
+    console.log('Response:', response);<br>
+    return response.json();<br>
+  })<br>
+  // response.json())<br>
+  .then((data) => {<br>
+    console.log('Data:', data);<br>
+    const restaurantsList = document.getElementById('restaurants-list');<br>
 
     data.restaurants.forEach((restaurant) => {
       const restaurantItem = document.createElement('div');
@@ -46,3 +47,4 @@ fetch('DATA.json')
     });
   })
   .catch((error) => console.error(error));
+
