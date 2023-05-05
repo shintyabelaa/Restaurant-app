@@ -1,6 +1,7 @@
 # Restaurant-app
 
 //How to fetch api from DATA.JSON
+
 import 'regenerator-runtime'; /* for async await transpile */
 import '../styles/style.css';
 import '../styles/responsive.css';
